@@ -17,7 +17,7 @@ To investigate the possibility of bias in paid Amazon Reviews, the “Vine_Table
 ### Figure 3: Analysis of Unpaid Reviews
 ![]( https://github.com/Scruffy-Bearie/Amazon_Vine_Analysis/blob/main/IMAGES/Image2.png)
 
-To obtain a more robust analysis of potential bias in paid reviews, the filtered vine data was, via two steps, imported in RStudio and scrutinized using a two sample t-test (see Figure 4).
+To obtain a more robust analysis of potential bias in paid reviews, the filtered vine data was, via two steps, imported in RStudio and scrutinized using a two sample t-test and both the Mann-Whitney and Kruskal-Wallace tests (see Figure 4).
 
 ### Figure 4: Analysis of Paid and Unpaid Reviews in RStudio
 ![](https://github.com/Scruffy-Bearie/Amazon_Vine_Analysis/blob/main/IMAGES/Image5.png) 
@@ -44,4 +44,4 @@ In the interests of determining if there was a statistically significant differe
 
 The results acquired demonstrate that the mean “star_review” for paid reviews was 4.09 while that for unpaid reviews was 3.65.  The null hypothesis for the t-test comparing the means was that there was no statistically significant difference between the means and the p-value associated with the test, 2.2e-16, suggested that the null hypothesis should be rejected in favour of the alternate: there is a statistically significant difference between the means (the means are not the same).  As such, comparison of the means taken in conjunction with the results of the t-test suggest that there is in fact bias associated with the paid review program in favour of higher reviews on average.
 
- 
+The researcher concedes that given the "star_rating" data is of the "discrete-ordinal" type, analysis of the means of the "paid" vs "unpaid" groups using a two sample t-test is not, technically speaking, within the scope of best practices for statistical analysis.  With these thoughts in mind, the data set was further analysed using the Mann-Whitney and Kruskal-Wallace tests to determine if there was a statistically significant difference in the “star_ratings” between the “paid” and “unpaid” populations.  In both cases, the p-value associated with the test (6.97e-7) was well below the threshold level of 0.05 suggesting that the null hypothesis (there is no difference between the “paid” and “unpaid” populations) should be rejected in favour of the alternative hypothesis (there IS a difference between the “paid” and “unpaid” populations).  As such, both the Mann-Whitney and Kruskal-Wallace tests provided further evidence in support of the conclusion that there is, in fact, a bias associated with the paid review program.
