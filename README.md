@@ -20,7 +20,7 @@ To investigate the possibility of bias in paid Amazon Reviews, the “Vine_Table
 To obtain a more robust analysis of potential bias in paid reviews, the filtered vine data was, via two steps, imported in RStudio and scrutinized using a two sample t-test (see Figure 4).
 
 ### Figure 4: Analysis of Paid and Unpaid Reviews in RStudio
-![]( https://github.com/Scruffy-Bearie/Amazon_Vine_Analysis/blob/main/IMAGES/Image4.png) 
+![](https://github.com/Scruffy-Bearie/Amazon_Vine_Analysis/blob/main/IMAGES/Image5.png) 
 
 ## Summary
 Analysis of the results acquired provided the following information:
